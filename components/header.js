@@ -24,6 +24,8 @@ export default function Header() {
           href="https://fonts.googleapis.com/css2?family=Sevillana&display=swap"
           rel="stylesheet"
         />
+       <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet"/>
+        
       </Head>
     </>
   );

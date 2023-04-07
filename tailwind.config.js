@@ -14,13 +14,13 @@ module.exports = {
     extend: {
       borderStyle: ["hover"],
       fontFamily: {
-        sevillana: ['"Sevillana"', "cursive"],
+        cursive: ['"Great Vibes"', "cursive"],
       },
       colors: {
         pinky: " #efb3f9 ",
         bluePastel: "#caeef5",
         blueGray: "#3b8c9c",
-        dividers:"#286673"
+        dividers:" #9ebb96 "
       },
     },
   },
