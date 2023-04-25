@@ -1,6 +1,6 @@
 import Image from "next/image";
-const modalSanPaolo = (props) => {
-  console.log("modalSanPaolo");
+const modalBinance = (props) => {
+  console.log("modalBinance");
   return (
     <div className=" z-50 fixed top-0 left-0 w-full h-full flex items-center bg-opacity-30 justify-center bg-gray-500">
       <div className="bg-white rounded p-8 max-w-xl">
@@ -15,4 +15,4 @@ const modalSanPaolo = (props) => {
   );
 };
 
-export default modalSanPaolo;
+export default modalBinance;

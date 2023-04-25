@@ -1,9 +1,8 @@
-import { useState} from "react";
+import { useState, useEffect } from "react";
 const footer = (props) => {
   const [icon, seticon] = useState(false);
   const [iconSrc, seticonSrc] = useState(undefined);
-  const [iconNumber, seticonNumber] = useState(null);
-  const [paypalHover, setpaypalHover] = useState(false);
+  const [iconNumber, seticonNumber] = useState(false);
   const changeIcon = (icons) => {
     seticon(true);
     switch (icons) {
@@ -23,15 +22,28 @@ const footer = (props) => {
         seticonNumber(icons);
         seticonSrc("/youtube.png");
         break;
-        case 5:
+      case 5:
+        seticonNumber(icons);
+        seticonSrc("/paypal.png");
+
+      case 6:
         seticonNumber(icons);
         break;
     }
   };
-  const changePaypalIcon = () => {
-    setpaypalHover(true);
+
+  const propModal = () => {
+    props.handlerModalSetterBinance();
+    changeIcon(6);
+    seticon(false);
   };
 
+  useEffect(() => {
+   if (props.togglingBinanceColor === false) {
+    seticonNumber(false)
+
+   }
+  }, [iconNumber]);
 
 
   return (
@@ -45,7 +57,7 @@ const footer = (props) => {
             alt="instagram"
             title="instagram"
             onClick={() => {
-              changeIcon(1)
+              changeIcon(1);
               window.open(
                 "https://www.instagram.com/psic.andreacostantino/?igshid=YmMyMTA2M2Y%3D",
                 "_blank"
@@ -62,7 +74,7 @@ const footer = (props) => {
             alt="linkedin"
             title="linkedin"
             onClick={() => {
-              changeIcon(2)
+              changeIcon(2);
               window.open(
                 "https://www.linkedin.com/in/andrea-angelica-costantino-67920b173",
                 "_blank"
@@ -79,7 +91,7 @@ const footer = (props) => {
             alt="twitter"
             title="twitter"
             onClick={() => {
-              changeIcon(3)
+              changeIcon(3);
               window.open("https://twitter.com/hablapsicologa", "_blank");
             }}
             onMouseEnter={() => changeIcon(3)}
@@ -93,7 +105,7 @@ const footer = (props) => {
             alt="youtube"
             title="youtube"
             onClick={() => {
-              changeIcon(4) 
+              changeIcon(4);
               window.open(
                 "https://www.youtube.com/@psic.andreacostantino",
                 "_blank"
@@ -109,18 +121,18 @@ const footer = (props) => {
         <div>
           <img
             className="cursor-pointer inline-block w-auto min-[430px]:relative bottom-5 smallest-phone:max-tablet: mt-8 mb-10 "
-            src={paypalHover ? "/paypal.png" : "/paypal(1).png"}
+            src={icon && iconNumber === 5 ? iconSrc : "/paypal(1).png"}
             alt="paypal"
             title="Paypal"
             onClick={() => {
-              changePaypalIcon()
+              changeIcon(5);
               window.open(
                 "https://paypal.me/psicandreacostantino?country.x=IT&locale.x=it_IT",
                 "_blank"
               );
             }}
-            onMouseEnter={() => changePaypalIcon()}
-            onMouseLeave={() => setpaypalHover(false)}
+            onMouseEnter={() => changeIcon(5)}
+            onMouseLeave={() => seticon(false)}
           />
           <img
             className="  hover:grayscale-0  grayscale  inline-block w-30 h-5 min-[430px]:max[634px]:relative bottom-5 smallest-phone:max-tablet: mb-10 cursor-pointer"
@@ -130,10 +142,14 @@ const footer = (props) => {
             title="Banco (Intesa San Paolo)"
           />
           <img
-            className={`hover:grayscale-0 hover:invert-0 hover:brightness-100 brightness-0 grayscale inline-block w-30 h-7 min-[634px]:relative cursor-pointer  min-[885px]:relative bottom-[20px]`}
+            className={`${
+              iconNumber === 6
+                ? ""
+                : "hover:grayscale-0 hover:invert-0 hover:brightness-100 brightness-0"
+            }   inline-block w-30 h-7 min-[634px]:relative cursor-pointer  min-[885px]:relative bottom-[20px]`}
             src="/binance.png"
             alt="binance"
-            onClick={props.handlerModalSetterBinance }
+            onClick={propModal}
             title="Binance"
           />
         </div>

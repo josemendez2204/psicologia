@@ -28,6 +28,7 @@ const layout = ({ children }) => {
       <Footer
         handlerModalSetter={handleModalSanPaolo}
         handlerModalSetterBinance={handleModalbinance}
+        togglingBinanceColor={modalBinanceHandler}
       />
     </>
   );
