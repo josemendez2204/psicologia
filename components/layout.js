@@ -3,10 +3,11 @@ import Footer from "./footer";
 import Header from "./header";
 import ModalSanPaolo from "./modalSanPaolo";
 import ModalBinance from "./modalBinance";
-import { useState } from "react";
+import {  useState } from "react";
 const layout = ({ children }) => {
   const [modalSanPaolohandling, setModalSanPaolo] = useState(false);
   const [modalBinanceHandler, setModalBinanceHandler] = useState(false);
+ 
   const handleModalSanPaolo = () => {
     setModalSanPaolo(!modalSanPaolohandling);
   };
@@ -22,13 +23,12 @@ const layout = ({ children }) => {
         <ModalSanPaolo handlerModalSetter={handleModalSanPaolo} />
       )}
       {modalBinanceHandler && (
-        <ModalBinance handlerModalSetterBinance={handleModalbinance} />
+        <ModalBinance  handlerModalSetterBinance={handleModalbinance} />
       )}
       {children}
       <Footer
         handlerModalSetter={handleModalSanPaolo}
         handlerModalSetterBinance={handleModalbinance}
-        togglingBinanceColor={modalBinanceHandler}
       />
     </>
   );

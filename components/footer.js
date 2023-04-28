@@ -35,16 +35,7 @@ const footer = (props) => {
   const propModal = () => {
     props.handlerModalSetterBinance();
     changeIcon(6);
-    seticon(false);
   };
-
-  useEffect(() => {
-   if (props.togglingBinanceColor === false) {
-    seticonNumber(false)
-
-   }
-  }, [iconNumber]);
-
 
   return (
     <footer className=" flex flex-row bg-bluePastel  ">
