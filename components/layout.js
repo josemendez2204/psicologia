@@ -7,6 +7,7 @@ import {  useState } from "react";
 const layout = ({ children }) => {
   const [modalSanPaolohandling, setModalSanPaolo] = useState(false);
   const [modalBinanceHandler, setModalBinanceHandler] = useState(false);
+  const [modalClosingHandleColorBinance, setModalClosingHandleColorBinance]= useState(false)
  
   const handleModalSanPaolo = () => {
     setModalSanPaolo(!modalSanPaolohandling);
@@ -14,6 +15,10 @@ const layout = ({ children }) => {
 
   const handleModalbinance = () => {
     setModalBinanceHandler(!modalBinanceHandler);
+  };
+
+  const binanceResetColor = () => {
+    setModalClosingHandleColorBinance(!modalClosingHandleColorBinance);
   };
   return (
     <>
@@ -23,12 +28,13 @@ const layout = ({ children }) => {
         <ModalSanPaolo handlerModalSetter={handleModalSanPaolo} />
       )}
       {modalBinanceHandler && (
-        <ModalBinance  handlerModalSetterBinance={handleModalbinance} />
+        <ModalBinance  handlerModalSetterBinance={handleModalbinance}  resetBinanceColor={binanceResetColor}/>
       )}
       {children}
       <Footer
         handlerModalSetter={handleModalSanPaolo}
         handlerModalSetterBinance={handleModalbinance}
+        resetBinanceColor={modalClosingHandleColorBinance}
       />
     </>
   );

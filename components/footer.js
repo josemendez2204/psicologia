@@ -32,6 +32,12 @@ const footer = (props) => {
     }
   };
 
+  if (props.resetBinanceColor) {
+    console.log("reinicio de color")
+  } else {
+    console.log("no se reinicia")
+  }
+
   const propModal = () => {
     props.handlerModalSetterBinance();
     changeIcon(6);
