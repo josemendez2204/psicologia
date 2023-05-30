@@ -12,17 +12,16 @@ function ContactForm() {
     email: string;
     message: string;
   };
-  const { register, control, handleSubmit, formState } = form;
+  const { register, control, handleSubmit, formState,reset } = form;
   const { errors } = formState;
   const onSubmit = async (data: FormValues) => {
     try {
-      const url= "http://localhost:3000/contacto"
-      const sendForm= await axios.post(url, data)
-      console.log(sendForm.data);
+      const url = "http://localhost:3001/contacto";
+      await axios.post(url, data);
+      reset()
     } catch (error) {
-      console.log(error)
+      console.log(error);
     }
-    
   };
   return (
     <div className="flex justify-center">
@@ -129,6 +128,7 @@ function ContactForm() {
               rows={5}
               cols={65}
               className="w-full border-gray-400 border-[1px] py-2 px-3"
+              placeholder="escribe tu mensaje"
             ></textarea>
           </div>
           {errors.message?.message && (

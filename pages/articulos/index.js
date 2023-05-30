@@ -29,11 +29,11 @@ const articulos = () => {
           route.push("/articulos/consumo-de-cannabis");
         }, 1000);
         break;
-        case 5:
-          setTimeout(() => {
-            route.push("/articulos/las-emociones");
-          }, 1000);
-          break;
+      case 5:
+        setTimeout(() => {
+          route.push("/articulos/las-emociones");
+        }, 1000);
+        break;
       default:
         setTimeout(() => {
           route.push("/articulos");
@@ -67,7 +67,6 @@ const articulos = () => {
         transition: { duration: 2 },
       },
     },
-
     {
       initial: { x: 0 },
       animate: {
@@ -80,7 +79,6 @@ const articulos = () => {
         transition: { duration: 2.5 },
       },
     },
-
     {
       initial: { x: 0 },
       animate: {
@@ -92,7 +90,8 @@ const articulos = () => {
         opacity: 0,
         transition: { duration: 3 },
       },
-    },    {
+    },
+    {
       initial: { x: 0 },
       animate: {
         x: "140%",
@@ -106,16 +105,28 @@ const articulos = () => {
     },
   ];
 
+  const cascadeVariant = {
+    hidden: { opacity: 0, y: -50 },
+    visible: { opacity: 1, y: 0 },
+    transition: { duration: 0.5 },
+    transition1: { duration: 0.5, delay: 0.2 },
+    transition2: { duration: 0.5, delay: 0.4 },
+    transition3: { duration: 0.5, delay: 0.6 },
+    transition4: { duration: 0.5, delay: 0.8 },
+    transition5: { duration: 0.5, delay: 1 }
+  };
+
   const styleArticle =
     "flex flex-col w-3/4 items-center justify-center h-auto min-[974px]:block my-4  border border-solid border-dividers rounded-xl shadow-xl hover:bg-slate-100 hover:shadow-2xl";
   return (
     <div className="flex items-center flex-col justify-center bg-white bg-opacity-50 h-auto ">
       <motion.div
         className={`${styleArticle}`}
-        variants={selectedDiv ? variants[0] : {}}
-        initial="initial"
-        animate="animate"
+        variants={selectedDiv ? variants[0] : cascadeVariant}
+        initial={selectedDiv ? "initial" : "hidden"}
+        animate={selectedDiv ? "animate" : "visible"}
         exit="exit"
+        transition="transition"
         onClick={() => {
           handleSelection(1);
         }}
@@ -128,10 +139,11 @@ const articulos = () => {
       </motion.div>
       <motion.div
         className={`${styleArticle}`}
-        variants={selectedDiv ? variants[1] : {}}
-        initial="initial"
-        animate="animate"
+        variants={selectedDiv ? variants[1] : cascadeVariant}
+        initial={selectedDiv ? "initial" : "hidden"}
+        animate={selectedDiv ? "animate" : "visible"}
         exit="exit"
+        transition={selectedDiv ? "transition" : "transition2"}
         onClick={() => {
           handleSelection(2);
         }}
@@ -144,10 +156,11 @@ const articulos = () => {
       </motion.div>
       <motion.div
         className={`${styleArticle}`}
-        variants={selectedDiv ? variants[2] : {}}
-        initial="initial"
-        animate="animate"
+        variants={selectedDiv ? variants[2] : cascadeVariant}
+        initial={selectedDiv ? "initial" : "hidden"}
+        animate={selectedDiv ? "animate" : "visible"}
         exit="exit"
+        transition={selectedDiv ? "transition" : "transition3"}
         onClick={() => {
           handleSelection(3);
         }}
@@ -160,10 +173,11 @@ const articulos = () => {
       </motion.div>
       <motion.div
         className={`${styleArticle}`}
-        variants={selectedDiv ? variants[3] : {}}
-        initial="initial"
-        animate="animate"
+        variants={selectedDiv ? variants[3] : cascadeVariant}
+        initial={selectedDiv ? "initial" : "hidden"}
+        animate={selectedDiv ? "animate" : "visible"}
         exit="exit"
+        transition={selectedDiv ? "transition" : "transition4"}
         onClick={() => {
           handleSelection(4);
         }}
@@ -179,10 +193,11 @@ const articulos = () => {
       </motion.div>
       <motion.div
         className={`${styleArticle}`}
-        variants={selectedDiv ? variants[4] : {}}
-        initial="initial"
-        animate="animate"
+        variants={selectedDiv ? variants[4] : cascadeVariant}
+        initial={selectedDiv ? "initial" : "hidden"}
+        animate={selectedDiv ? "animate" : "visible"}
         exit="exit"
+        transition={selectedDiv ? "transition" : "transition5"}
         onClick={() => {
           handleSelection(5);
         }}
