@@ -25,9 +25,6 @@ const footer = (props) => {
       case 5:
         seticonNumber(icons);
         seticonSrc("/paypal.png");
-
-      case 6:
-        seticonNumber(icons);
         break;
     }
   };
@@ -40,11 +37,10 @@ const footer = (props) => {
 
   const propModal = () => {
     props.handlerModalSetterBinance();
-    changeIcon(6);
   };
 
   return (
-    <footer className=" flex flex-row bg-bluePastel  ">
+    <footer className=" flex flex-row bg-[#d9c8d5]  ">
       <div className="mr-auto">
         <h3 className="font-bold  underline mb-2 mt-5">Redes sociales</h3>
         <div className="inline-block w-15 mt-2">

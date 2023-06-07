@@ -1,15 +1,16 @@
 import PriceTable from "../components/priceTable";
+import { motion } from "framer-motion";
 import Image from "next/image";
 const servicio = () => {
   const individual = [
-    { id: 1, title: "PRIMERA SESION INDIVIDUAL", price: "$50" },
-    { id: 2, title: "SESION SUCESIVA INDIVIDUAL", price: "$30" },
-    { id: 3, title: "PACK SUCESIVO 4 SESIONES INDIVIDUALES", price: "$100" },
+    { id: 1, title: "PRIMERA SESION INDIVIDUAL", price: "€50" },
+    { id: 2, title: "SESION SUCESIVA INDIVIDUAL", price: "€30" },
+    { id: 3, title: "PACK SUCESIVO 4 SESIONES INDIVIDUALES", price: "€100" },
   ];
 
   const parejas = [
-    { id: 4, title: `SESION EN PAREJA\n\n`, price: "$50" },
-    { id: 5, title: "PACK PAREJAS 4 SESIONES SUCESIVAS", price: "$115" },
+    { id: 4, title: `SESION EN PAREJA\n\n`, price: "€50" },
+    { id: 5, title: "PACK PAREJAS 4 SESIONES SUCESIVAS", price: "€115" },
   ];
 
   return (
@@ -92,16 +93,21 @@ const servicio = () => {
       <div className="flex flex-col min-[450px]:flex-row gap-0.5 items-center justify-center">
         <p id="parejas"></p>
         {individual.map((individual) => (
-          <PriceTable
-            title={individual.title}
-            price={individual.price}
-            onClick={() => {
-              window.open(
-                `https://wa.me/393270717765?text=Hola, estoy interesado en ${individual.title}`,
-                "_blank"
-              );
-            }}
-          />
+          <motion.div
+            whileHover={{ y: -10 }} // Mueve el div 10 píxeles hacia arriba al hacer hover
+            transition={{ duration: 0.3 }} // Duración de la animación
+          >
+            <PriceTable
+              title={individual.title}
+              price={individual.price}
+              onClick={() => {
+                window.open(
+                  `https://wa.me/393270717765?text=Hola, estoy interesado en ${individual.title}`,
+                  "_blank"
+                );
+              }}
+            />
+          </motion.div>
         ))}
       </div>
       <div className="border-t-2 border-solid border-dividers "></div>
@@ -116,16 +122,21 @@ const servicio = () => {
       </div>
       <div className="flex flex-col min-[450px]:flex-row gap-0.5 items-center justify-center">
         {parejas.map((parejas) => (
-          <PriceTable
-            title={parejas.title}
-            price={parejas.price}
-            onClick={() => {
-              window.open(
-                `https://wa.me/393270717765?text=Hola, estoy interesado en ${parejas.title}`,
-                "_blank"
-              );
-            }}
-          />
+          <motion.div
+            whileHover={{ y: -10 }} // Mueve el div 10 píxeles hacia arriba al hacer hover
+            transition={{ duration: 0.3 }} // Duración de la animación
+          >
+            <PriceTable
+              title={parejas.title}
+              price={parejas.price}
+              onClick={() => {
+                window.open(
+                  `https://wa.me/393270717765?text=Hola, estoy interesado en ${parejas.title}`,
+                  "_blank"
+                );
+              }}
+            />
+          </motion.div>
         ))}
         <p id="familiar"></p>
       </div>
@@ -140,16 +151,21 @@ const servicio = () => {
         </p>
       </div>
       <div className="flex flex-row gap-0.5 items-center justify-center">
-        <PriceTable
-          title={"SESION FAMILIAR \n \n "}
-          price="$55"
-          onClick={() => {
-            window.open(
-              `https://wa.me/393270717765?text=Hola, estoy interesado en SESION FAMILIAR`,
-              "_blank"
-            );
-          }}
-        />
+        <motion.div
+          whileHover={{ y: -10 }} // Mueve el div 10 píxeles hacia arriba al hacer hover
+          transition={{ duration: 0.3 }} // Duración de la animación
+        >
+          <PriceTable
+            title={"SESION FAMILIAR \n \n "}
+            price="$55"
+            onClick={() => {
+              window.open(
+                `https://wa.me/393270717765?text=Hola, estoy interesado en SESION FAMILIAR`,
+                "_blank"
+              );
+            }}
+          />
+        </motion.div>
       </div>
       <div className="border-t-2 border-solid border-dividers "></div>
       <div className="flex justify-center flex-col items-center">

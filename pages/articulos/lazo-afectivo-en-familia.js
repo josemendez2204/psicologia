@@ -3,9 +3,9 @@ function lazoAfectivoEnFamilia() {
   return (
     <>
       <ImagesOfArticles images="lazofamilia" />
-      <div className="text-center">🎀</div>
+      <div className="text-center">🎀
       <br/>
-      <h1 className="text-center font-bold">EL LAZO AFECTIVO EN LA FAMILIA</h1>
+      <h1 className="font-bold">EL LAZO AFECTIVO EN LA FAMILIA</h1>
       <br />
       <div className="text-justify">
       <p>
@@ -18,8 +18,8 @@ function lazoAfectivoEnFamilia() {
       <br />
       <p>Ahora bien</p>
       <br />
-      </div>
-      <p className="font-bold text-center">
+      
+      <p className="font-bold ">
         ¿Porque se pelean las familias y el conflicto pareciera que no se
         pudiera solucionar?
       </p>
@@ -83,7 +83,7 @@ function lazoAfectivoEnFamilia() {
         fuertes o vinculos inestables son los siguientes:
       </p>
       <br/>
-      <ol className="list-decimal">
+      <ol className="list-decimal ml-[5%]">
         <li>El estilo o tipo de apego que desarrolla cada integrante</li>
         <li>
           Los padres no propiciaron la unidad en la familia (División entre los
@@ -142,7 +142,9 @@ function lazoAfectivoEnFamilia() {
       </p>
       <br />
       </div>
-      <p className="text-center">Entonces, decide lo que deseas dejar como herencia...</p>
+      <p>Entonces, decide lo que deseas dejar como herencia...</p>
+      </div>
+      </div>
     </>
   );
 }

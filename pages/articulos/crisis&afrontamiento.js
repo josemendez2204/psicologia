@@ -5,6 +5,7 @@ function CrisisAfrontamiento() {
       <ImagesOfArticles images="crisis" />
       <h1 className="font-bold text-center ">CRISIS & AFRONTAMIENTO</h1>
       <br/>
+      <div className="text-center">
       <div className="text-justify">
       <p>
         Toda crisis es una circunstancia transitoria que nos envuelve en estrés,
@@ -30,7 +31,7 @@ function CrisisAfrontamiento() {
         generar: <b>CAMBIOS</b> por cuanto,
       </p>
       <br/>
-      <ul className="list-disc">
+      <ul className="list-disc ml-[5%]">
         <li>
          <b>Son Necesarias</b>; porque nos generan cambios en la dinámica de nuestro
           estilo de vida.
@@ -50,7 +51,7 @@ function CrisisAfrontamiento() {
         confirma que se va por buen camino hacia el desenlace de la misma.
       </p>
       <br />
-      <ul className="list-disc">
+      <ul className="list-disc ml-[5%]">
         <li>
           <b>Traen Superación Personal</b>; la cual nos capacita para vivir ante
           cualquier circunstancia.
@@ -101,7 +102,7 @@ function CrisisAfrontamiento() {
       <br/>
       <p className="font-bold text-center">Enfrentar - Modificar - Superar</p>
       <br/>
-      <ul className="list-disc">
+      <ul className="list-disc ml-[5%]">
         <li>
           <b>Las crisis no se deben evadir</b>; el hecho de ignorar, evadir o huir de
           la crisis solo la fortalece añadiendo su postergación y perpetuación
@@ -120,7 +121,7 @@ function CrisisAfrontamiento() {
         siguientes puntos:
       </p>
       <br/>
-      <ul className="list-disc">
+      <ul className="list-disc ml-[5%]">
         <li>
           <b>La Aceptación</b>; ésta genera un estado de conciencia que permite evaluar
           la crisis y ajustar lo necesario para salir de la misma. Es decir que
@@ -140,7 +141,7 @@ function CrisisAfrontamiento() {
       </ul>
       <br/>
       <p>El miedo se supera con Valentía, Amor & Dominio propio.</p>
-      <ul className="list-disc">
+      <ul className="list-disc ml-[5%]">
         <li>
           <b>Enfócate en mantener tu identidad Clara</b>; no le des más importancia al
           problema que a la solución. Asume tu responsabilidad, desechando todo
@@ -164,6 +165,7 @@ function CrisisAfrontamiento() {
         enfrentas.
       </p>
       <br/>
+      </div>
       </div>
     </>
   );

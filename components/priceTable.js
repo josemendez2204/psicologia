@@ -5,8 +5,8 @@ const priceTable = (props) => {
       <h5 style={{ whiteSpace: "pre-line" }} className="mt-3 text-center font-medium">
         {props.title}
       </h5>
-      <div className=" mt-7 rounded-full w-[60%] h-[43%]  bg-gradient-to-r from-[#d397d7] via-[#a24da8] to-[#d397d7]">
-        <p className="text-center mt-[45px] text-3xl text-white"> {props.price} </p>
+      <div className=" mt-7 rounded-full w-[60%] h-[43%]  bg-gradient-to-r from-[#cfcdcb] via-[#cd93b6] to-[#cfcdcb]">
+        <p className="text-center mt-[45px] text-3xl text-[#2d2c2c]"> {props.price} </p>
       </div>
     </div>
     </button>

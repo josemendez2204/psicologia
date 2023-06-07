@@ -25,7 +25,7 @@ function ContactForm() {
   };
   return (
     <div className="flex justify-center">
-      <div className="flex flex-col w-full max-w-md border-black rounded-xl border-[1px] py-5 my-2">
+      <div className="flex flex-col w-full max-w-md border-black bg-white bg-opacity-75 rounded-xl border-[1px] py-5 my-2">
         <form onSubmit={handleSubmit(onSubmit)} className="px-4" noValidate>
           <h1 className="text-center font-extrabold text-lg">¡Contáctame!</h1>
           <div className="flex flex-col sm:flex-row">

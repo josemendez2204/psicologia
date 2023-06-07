@@ -3,7 +3,7 @@ function psicologiaSalud() {
   return (
     <>
       <ImagesOfArticles images="psicologiaSalud" />
-
+    <div className="text-center">
       <div className="text-justify">
         <p>
           La Psicología de la Salud está dedicada al entendimiento de las
@@ -121,6 +121,7 @@ function psicologiaSalud() {
         </ul>
       </div>
       <br/>
+      </div>
     </>
   );
 }

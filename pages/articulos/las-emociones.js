@@ -8,6 +8,7 @@ function lasEmociones() {
         </div>
       </div>
       <h1 className="text-center font-bold">LAS EMOCIONES</h1>
+      <div className="text-center">
       <br/>
       <div className="text-justify">
       <p>
@@ -43,7 +44,7 @@ function lasEmociones() {
         emociones como:
       </p>
       <br/>
-      <ul className="list-disc">
+      <ul className="list-disc ml-[5%]">
         <li>Evitar la emoción</li>
         <li>Distanciamiento de la emociòn </li>
         <li>
@@ -62,7 +63,7 @@ function lasEmociones() {
         las mismas:
       </p>
       <br/>
-      <ul className="list-disc">
+      <ul className="list-disc ml-[5%]">
         <li>Llorar</li>
         <li>Escribir</li>
         <li>Meditar</li>
@@ -81,6 +82,7 @@ function lasEmociones() {
         nos hace errar el blanco es decir que no sea acertada.
       </p>
       <br/>
+      </div>
       </div>
     </>
   );
