@@ -5,26 +5,31 @@ import { motion } from "framer-motion";
 const about = () => {
   const paragraphs = [
     {
-      text: "De clase 1994 nací en la Ciudad de Maracaibo, Venezuela. Soy Psicóloga egresada de la Universidad Rafael Urdaneta (URU) - Escuela de Psicologia promoción  XCII. ",
-      delay: 0.2,
+    text: "Soy Psicóloga egresada de la Universidad Rafael Urdaneta (URU) - Escuela de Psicologia promoción XCII en año 2016.",
+    delay: 0.2,
     },
     {
-      text: "Con más de seis años de experiencia en el área de la psicología clínica y salud como terapeuta  cognitivo conductual a nivel Individual, de Parejas y Familiar ó Grupal. ",
-      delay: 0.4,
+    text: "Con más de seis años de experiencia en el área de la psicología clínica y salud como terapeuta cognitivo conductual a nivel Individual, de Parejas y Familiar ó Grupal.",
+    delay: 0.4,
     },
     {
-      text: "Me he formado y preparado a nivel personal, académico, profesional y laboral para brindar un óptimo servicio que  sea de instrumento para reivindicar a todo individuo en salud mental y sacar su mejor versión, de manera que aprendas del pasado, vivas la visión en el presente y camines seguro hacia el futuro. ",
-      delay: 0.6,
+    text: "Me he formado y preparado a nivel personal, académico, profesional y laboral para brindar un óptimo servicio que sea instrumento para reivindicar a todo individuo a su salud mental y sacar su mejor versión, de manera que aprenda del pasado, viva la visión en el presente y camine seguro hacia el futuro.",
+    delay: 0.6,
     },
     {
-      text: " Por lo cual  mantengo constante actualización y formación. También soy titulada como Experta en Mindfulness & Gestión Emotiva por el IEPP y la Universidad Popular de Milán -  Genova Italia   ",
-      delay: 0.8,
+    text: "Atravesé mis Pasantías con mención honorífica como Psicólogo Clínico en el Servicio de Psiquiatría del Hospital General del Sur Dr. Pedro Iturbe en la Ciudad de Maracaibo, Edo. Zulia Venezuela.",
+    delay: 0.8,
     },
     {
-      text: "A su vez cuento con formación en:",
-      delay: 1,
+    text: "Así mismo Colaboré en la aplicación de las Escalas Wechsler de inteligencia para adultos (WAIS), para El Taller Laboral Ciudad de Maracaibo en la evaluación, diagnóstico, actualización de informe y tratamiento de adolescentes y adultos con discapacidad.",
+    delay: 1,
     },
-  ];
+    {
+    text: "Mantengo constante actualización y formación. También estoy titulada como Experta en Mindfulness & Gestión Emotiva por el IEPP y la Universidad Polular de Milán - Genova Italia",
+    delay: 1.2,
+    },
+    ];
+
 
   const list = [
   
@@ -65,7 +70,7 @@ const about = () => {
           s
         />
         <div className="flex items-center flex-col justify-start">
-          <h1 className="mb-2 text-[30px] font-medium ">Andrea Angelica Costantino</h1>
+          <h1 className="mb-2 text-[30px] text-center font-medium ">Andrea Angelica Costantino</h1>
           <Image
             className="block w-[60%] h-[90%] float-left mb-3 min-[810px]:hidden"
             src={require("../images/acerca-de-mi.jpg")}
