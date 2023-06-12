@@ -38,10 +38,10 @@ const mobileMenu = (props) => {
           </a>
           <a
             className="mb-1 hover:text-slate-800"
-            href="/contactos"
+            href="/contacto"
             onClick={props.toggle}
           >
-            Contactos
+            Contacto
           </a>
         </div>
       </motion.div>
