@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useState} from "react";
 const footer = (props) => {
   const [icon, seticon] = useState(false);
   const [iconSrc, seticonSrc] = useState(undefined);

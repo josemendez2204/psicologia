@@ -1,7 +1,9 @@
 import ImagesOfArticles from "../../components/imagesOfArticles";
+import GoBack from "../../components/goBack";
 function consumoDeCannabis() {
   return (
     <>
+    <GoBack/>
       <ImagesOfArticles images="cannabis" />
       <h1 className="font-bold text-center">CANNABIS</h1>
       <br />

@@ -1,7 +1,9 @@
 import ImagesOfArticles from "../../components/imagesOfArticles";
+import GoBack from "../../components/goBack";
 function lasEmociones() {
   return (
     <>
+     <GoBack/>
       <div className="flex items-center justify-center">
         <div className="w-[80%]">
           <ImagesOfArticles images="emociones" />

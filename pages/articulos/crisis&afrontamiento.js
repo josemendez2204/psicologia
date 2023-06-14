@@ -1,7 +1,9 @@
 import ImagesOfArticles from "../../components/imagesOfArticles";
+import GoBack from "../../components/goBack";
 function CrisisAfrontamiento() {
   return (
     <>
+     <GoBack/>
       <ImagesOfArticles images="crisis" />
       <h1 className="font-bold text-center ">CRISIS & AFRONTAMIENTO</h1>
       <br/>

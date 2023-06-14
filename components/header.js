@@ -3,7 +3,7 @@ import { useRouter } from "next/router";
 export default function Header() {
   const router = useRouter();
   const titleReplace = router.pathname.toString();
-  const replace = titleReplace.replace("/", "");
+  const replace = titleReplace.replace("/", "").replace("/", " | ").replace("-"," ").replace("-"," ").replace("-"," ").replace("-"," ");
   const prueba = replace === "" ? "" : `| ${replace}`;
   return (
     <>

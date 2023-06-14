@@ -1,7 +1,9 @@
 import ImagesOfArticles from "../../components/imagesOfArticles";
+import GoBack from "../../components/goBack";
 function lazoAfectivoEnFamilia() {
   return (
     <>
+     <GoBack/>
       <ImagesOfArticles images="lazofamilia" />
       <div className="text-center">🎀
       <br/>
