@@ -16,7 +16,7 @@ export default function Home() {
       sessionStorage.setItem("gift", "regalo");
       setTimeout(() => {
         setShowGift(true);
-      }, 26000);
+      }, 24000);
     }
 
     setTimeout(() => {
@@ -24,7 +24,7 @@ export default function Home() {
     }, 3000);
     setTimeout(() => {
       setName(true);
-    }, 26000);
+    }, 25000);
   }, []);
 
   return (
@@ -54,7 +54,7 @@ export default function Home() {
             <div className="text-[15px] text-justify min-[450px]:text-center  min-[450px]:text-[20px]">
               <TypeAnimation
                 sequence={[
-                  "En éste espacio quiero compartir con todo aquel que busca una transformación en su estilo de vida. Desde la psicoeducación mi propósito es impartir mi experiencia dentro del campo de la salud mental como psicoterapeuta en el acompañamiento con las herramientas necesarias, calificadas,  probada y aprobadas para ayudarte  alcanzar el bienestar psicológico que todos frenéticamente buscamos.",
+                  "En éste espacio quiero compartir a todo aquel que busca una transformación en su estilo de vida. Desde la psicoeducación mi propósito es impartir mi experiencia dentro del campo de la salud mental como psicoterapeuta en el acompañamiento con las herramientas necesarias, calificadas,  probada y aprobadas para ayudarte  alcanzar el bienestar psicológico que todos frenéticamente buscamos.",
                   1000,
                 ]}
                 speed={60}

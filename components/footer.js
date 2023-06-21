@@ -20,7 +20,7 @@ const footer = (props) => {
         break;
       case 4:
         seticonNumber(icons);
-        seticonSrc("/youtube.png");
+        seticonSrc("/tik-tok.png");
         break;
       case 5:
         seticonNumber(icons);
@@ -94,13 +94,13 @@ const footer = (props) => {
         <div className="inline-block w-15 mt-2 cursor-pointer">
           <img
             className="w-full"
-            src={icon && iconNumber === 4 ? iconSrc : "/youtube(1).png"}
+            src={icon && iconNumber === 4 ? iconSrc : "/tiktok.png"}
             alt="youtube"
-            title="youtube"
+            title="tiktok"
             onClick={() => {
               changeIcon(4);
               window.open(
-                "https://www.youtube.com/@psic.andreacostantino",
+                "https://www.tiktok.com/@psic.andreacostantino?_t=8d6ouYhJwLl&_r=1",
                 "_blank"
               );
             }}
