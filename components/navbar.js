@@ -8,7 +8,7 @@ const Navbar = () => {
   const location = useRouter();
   const locationRoute = location.pathname;
   const [toggleMenu, setToggleMenu] = useState(true);
-  const [routeHandler, setRouteHandles] = useState(undefined);
+  const [routeHandler, setRouteHandles] = useState("");
 
   const handleMenu = () => {
     setToggleMenu(!toggleMenu);
@@ -16,7 +16,8 @@ const Navbar = () => {
   };
 
   useEffect(() => {
-    setRouteHandles(locationRoute);
+    setRouteHandles(locationRoute)
+    console.log(routeHandler)
   }, [location]);
 
   const menuItems = [
@@ -26,9 +27,8 @@ const Navbar = () => {
     { href: "/servicio", label: "Servicio" },
     { href: "/contacto", label: "Contacto" },
   ];
-
   return (
-    <div className="z-10 sticky top-0">
+    <div className="z-50 sticky top-0">
       <nav className="bg-white bg-opacity-80 flex justify-end mt-2 py-3.5">
         <div className="text-4xl font-cursive mr-auto">Psic. Andrea Costantino</div>
         {menuItems.map((item) => (
@@ -36,6 +36,7 @@ const Navbar = () => {
             key={item.href}
             href={item.href}
             className={`mr-3 mt-2 transition duration-150 border-b-2 ${
+              (item.href === "/articulos" && routeHandler.startsWith("/articulos")) ||
               routeHandler === item.href ? "border-[#cd93b6]" : "border-transparent"
             } hover:border-b-[#cd93b6] hidden tablet:block`}
           >

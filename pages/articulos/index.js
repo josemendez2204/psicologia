@@ -115,7 +115,8 @@ const articulos = () => {
     transition4: { duration: 0.5, delay: 0.8 },
     transition5: { duration: 0.5, delay: 1 }
   };
-
+ 
+  
   const styleArticle =
     "flex flex-col w-3/4 items-center justify-center h-auto min-[974px]:block my-4  border border-solid border-dividers rounded-xl shadow-xl hover:bg-slate-100 hover:shadow-2xl";
   return (

@@ -10,7 +10,7 @@ const servicio = () => {
 
   const parejas = [
     { id: 4, title: `SESION EN PAREJA\n\n`, price: "€50" },
-    { id: 5, title: "PACK PAREJAS 4 SESIONES SUCESIVAS", price: "€115" },
+    { id: 5, title: "PACK PAREJAS 4 SESIONES SUCESIVAS", price: "€155" },
   ];
 
   return (
