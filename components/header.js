@@ -10,7 +10,7 @@ export default function Header() {
       <Head>
         <title>
           {" "}
-          Psicóloga Andrea Costantino: terapia y salud mental {prueba}
+          Psicóloga Andrea Costantino: psicoterapia y salud mental {prueba}
         </title>
         <meta
           name="description"
