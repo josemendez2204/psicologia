@@ -16,7 +16,7 @@ function ContactForm() {
   const { errors } = formState;
   const onSubmit = async (data: FormValues) => {
     try {
-      const url = "http://localhost:3001/contacto";
+      const url = "https://server-psicologia.vercel.app/contacto";
       await axios.post(url, data);
       reset()
     } catch (error) {
