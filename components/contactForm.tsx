@@ -16,13 +16,18 @@ function ContactForm() {
   const { errors } = formState;
   const onSubmit = async (data: FormValues) => {
     try {
-      const url = "https://server-psicologia.vercel.app/contacto";
-      await axios.post(url, data);
-      reset()
+      const url = process.env.NEXT_PUBLIC_BASE_URL;
+      if (typeof url === "string") {
+        await axios.post(url as string, data);
+        reset();
+      } else {
+        throw new Error('BASE_URL is not defined or is not a string.');
+      }
     } catch (error) {
       console.log(error);
     }
   };
+  
   return (
     <div className="flex justify-center">
       <div className="flex flex-col w-full max-w-md border-black bg-white bg-opacity-75 rounded-xl border-[1px] py-5 my-2">
