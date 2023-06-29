@@ -1,9 +1,12 @@
 import React from "react";
+import { useState } from "react";
 import { useForm } from "react-hook-form";
 import Errormessage from "./errorMessage";
 import axios from "axios";
+import SentSuccess from "./formSentSuccess";
 
 function ContactForm() {
+  const [formSent, setFormSent] = useState(false);
   const form = useForm<FormValues>();
   type FormValues = {
     firstName: string;
@@ -12,23 +15,29 @@ function ContactForm() {
     email: string;
     message: string;
   };
-  const { register, control, handleSubmit, formState,reset } = form;
+  const { register, control, handleSubmit, formState, reset } = form;
   const { errors } = formState;
   const onSubmit = async (data: FormValues) => {
     try {
       const url = process.env.NEXT_PUBLIC_BASE_URL;
       if (typeof url === "string") {
         await axios.post(url as string, data);
-        reset();
+        setFormSent(true);
+        setTimeout(() => {
+          setFormSent(false);
+        }, 3000);
+         reset();
       } else {
-        throw new Error('BASE_URL is not defined or is not a string.');
+        throw new Error("BASE_URL is not defined or is not a string.");
       }
     } catch (error) {
       console.log(error);
     }
   };
-  
+
   return (
+    <>
+    {formSent && <SentSuccess/>}
     <div className="flex justify-center">
       <div className="flex flex-col w-full max-w-md border-black bg-white bg-opacity-75 rounded-xl border-[1px] py-5 my-2">
         <form onSubmit={handleSubmit(onSubmit)} className="px-4" noValidate>
@@ -150,6 +159,7 @@ function ContactForm() {
         </form>
       </div>
     </div>
+    </>
   );
 }
 

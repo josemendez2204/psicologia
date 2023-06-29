@@ -15,10 +15,12 @@ const modalBinance = (props) => {
             src={require("../images/close.png")}
           />
         </div>
+        <div className="flex items-center justify-center">
         <Image
-          className="relative left-[17px]"
+          className=""
           src={require("../images/qr binance.png")}
         />
+        </div>
         <p className="text-center">
           0x942c7f4b221714cf79aa7d057cb9cc4fbe3da8b8
         </p>
