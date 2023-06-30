@@ -1,5 +1,5 @@
 import React from "react";
-import { useState } from "react";
+import { useState, KeyboardEvent } from "react";
 import { useForm } from "react-hook-form";
 import Errormessage from "./errorMessage";
 import axios from "axios";
@@ -14,6 +14,12 @@ function ContactForm() {
     tel: number;
     email: string;
     message: string;
+  };
+
+  const handleTelKeyDown = (event: KeyboardEvent<HTMLInputElement>) => {
+    if (event.key === ' ') {
+      event.preventDefault();
+    }
   };
   const { register, control, handleSubmit, formState, reset } = form;
   const { errors } = formState;
@@ -104,6 +110,7 @@ function ContactForm() {
               })}
               className="w-full border-gray-400 border-[1px] py-2 px-3"
               placeholder="+000000000000"
+              onKeyDown={handleTelKeyDown}
             />
           </div>
           {errors.tel?.message && <Errormessage message={errors.tel.message} />}
