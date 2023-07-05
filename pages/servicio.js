@@ -17,24 +17,24 @@ const servicio = () => {
     <div className="bg-white bg-opacity-50 h-auto ">
       <div className="flex justify-center flex-col items-center">
         <div className="mt-2 text-4xl font-cursive  text-center  ">
-          En Que y Como Puedo Ayudarte
+          ¿En Qué y Cómo Puedo Ayudarte?
         </div>
         <p className=" mt-4 mb-3 w-[80%] text-justify">
           {" "}
           Una Asesoría personalizada es un Espacio Exclusivo en el cual vas a
-          descubrir y trabajar aquellas áreas, creencias y hábitos que
+          descubrir y trabajar aquellas áreas, creencias, hábitos que
           interfieren en la dinámica personal, estilo y calidad de vida. Además,
-          obtendrás las herramientas y estrategias terapéuticas que se ajustan a
+          obtendrás las herramientas ó estrategias terapéuticas que se ajustan a
           tu esencia para modificar los pensamientos, emociones y
-          comportamientos no deseados, así como lo anteriormente mencionado.{" "}
+          comportamientos no deseados.{" "}
         </p>
         <p className=" mb-3 w-[80%] text-justify">
-          En este espacio iniciaras un proceso de sanación en tu historia de
-          vida, crecimiento personal y amor propio, cierre de ciclos cuyo
-          objetivo es desaprender y romper los viejos moldes y estilos de vida,
-          eliminando el sufrimiento subjetivo, reconstruyendo nuevos estilos de
-          afrontamiento y trabajar los comportamientos aprendidos y automáticos
-          que generalmente aquejan y dificultan la relación y comunicación
+          En éste espacio inicias un proceso de sanación en tu historia de vida,
+          crecimiento personal y amor propio, cierre de ciclos cuyo objetivo es
+          desaprender y romper los viejos moldes, estilos de vida, eliminando el
+          sufrimiento subjetivo, reconstruyendo nuevos estilos de afrontamiento
+          y trabajar los comportamientos aprendidos, automáticos que
+          generalmente aquejan dificultando la relación y comunicación
           interpersonal.
         </p>
         <p className=" mb-3 w-[80%] text-justify">
@@ -43,6 +43,19 @@ const servicio = () => {
           orientación o asesoría de un profesional de la Salud Mental calificado
           para el abordaje psicoterapéutico de los problemas del individuo desde
           cualquier parte del mundo.
+        </p>
+        <p className="mb-3 w-[80%] text-justify">
+          Una vez que realiza el pago total de los honorarios profesionales, se
+          le asigna el día y la hora en acuerdo entre el interesado y el
+          profesional.
+        </p>
+        <p className="mb-3 w-[80%] text-justify">
+          Las consultas privadas son No-Reembolsables. Es decir que usted podrá
+          reagendar su cita 1 sola vez, siempre y cuando notifique el cambio 24
+          horas antes de su fecha y hora pautada.
+        </p>
+        <p className="mb-3 w-[80%] text-justify">
+          Atención al cliente para reportar su pago y agendar su cita.
         </p>
         <h1 className=" font-bold text-center ">
           LAS ASESORIAS PERSONALIZADAS PUEDEN SER
@@ -60,22 +73,9 @@ const servicio = () => {
             <h2 className="font-semibold text-lime-800">FAMILIAR</h2>
           </a>
         </div>
-        <h1 className="font-cursive mt-3 text-4xl text-center">
-          Nos vemos en la consulta
+        <h1 className="font-cursive mt-3 mb-5 text-4xl text-center">
+          Nos vemos en Sesión
         </h1>
-        <p className="mt-4 mb-3 w-[80%] text-center">
-          Las sesiones son PRE PAGADAS. Es decir, una vez que usted realiza el
-          pago total se le asigna el día y la hora en acuerdo entre el
-          interesado y el profesional.
-        </p>
-        <p id="individual" className="mb-3 w-[80%] text-center">
-          Las consultas privadas son No-Reembolsables. Es decir que usted podrá
-          reagendar su cita 1 sola vez, siempre y cuando notifique el cambio 24
-          horas antes de su fecha y hora pautada.
-        </p>
-        <p className="mb-3 w-[80%] text-center">
-          Atención al cliente para reportar su pago y agendar su cita.
-        </p>
       </div>
       <div className="border-t-2 border-solid border-dividers "></div>
       <div className="flex justify-center flex-col items-center">
@@ -157,7 +157,7 @@ const servicio = () => {
         >
           <PriceTable
             title={"SESION FAMILIAR \n \n "}
-            price="$55"
+            price="€55"
             onClick={() => {
               window.open(
                 `https://wa.me/393270717765?text=Hola, estoy interesado en SESION FAMILIAR`,
