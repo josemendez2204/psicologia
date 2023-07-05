@@ -109,7 +109,7 @@ function ContactForm() {
                 },
               })}
               className="w-full border-gray-400 border-[1px] py-2 px-3"
-              placeholder="+000000000000"
+              placeholder="ej: +000000000000"
               onKeyDown={handleTelKeyDown}
             />
           </div>
