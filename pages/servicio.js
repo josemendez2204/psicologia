@@ -102,7 +102,7 @@ const servicio = () => {
               price={individual.price}
               onClick={() => {
                 window.open(
-                  `https://wa.me/393270717765?text=Hola, estoy interesado en ${individual.title}`,
+                  `https://wa.me/393270717765?text=Hola, estoy interesad@ en ${individual.title}`,
                   "_blank"
                 );
               }}
