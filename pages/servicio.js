@@ -3,14 +3,14 @@ import { motion } from "framer-motion";
 import Image from "next/image";
 const servicio = () => {
   const individual = [
-    { id: 1, title: "PRIMERA SESION INDIVIDUAL", price: "€50" },
-    { id: 2, title: "SESION SUCESIVA INDIVIDUAL", price: "€30" },
-    { id: 3, title: "PACK SUCESIVO 4 SESIONES INDIVIDUALES", price: "€100" },
+    { id: 1, title: "PRIMERA SESION INDIVIDUAL", price: "$50" },
+    { id: 2, title: "SESION SUCESIVA INDIVIDUAL", price: "$30" },
+    { id: 3, title: "PACK SUCESIVO 4 SESIONES INDIVIDUALES", price: "$100" },
   ];
 
   const parejas = [
-    { id: 4, title: `SESION EN PAREJA\n\n`, price: "€50" },
-    { id: 5, title: "PACK PAREJAS 4 SESIONES SUCESIVAS", price: "€155" },
+    { id: 4, title: `SESION EN PAREJA\n\n`, price: "$50" },
+    { id: 5, title: "PACK PAREJAS 4 SESIONES SUCESIVAS", price: "$155" },
   ];
 
   return (
@@ -131,7 +131,7 @@ const servicio = () => {
               price={parejas.price}
               onClick={() => {
                 window.open(
-                  `https://wa.me/393270717765?text=Hola, estoy interesado en ${parejas.title}`,
+                  `https://wa.me/393270717765?text=Hola, estoy interesad@ en ${parejas.title}`,
                   "_blank"
                 );
               }}
@@ -160,7 +160,7 @@ const servicio = () => {
             price="€55"
             onClick={() => {
               window.open(
-                `https://wa.me/393270717765?text=Hola, estoy interesado en SESION FAMILIAR`,
+                `https://wa.me/393270717765?text=Hola, estoy interesad@ en SESION FAMILIAR`,
                 "_blank"
               );
             }}
@@ -180,7 +180,7 @@ const servicio = () => {
           className=" my-3 w-[330px] min-max[838px]:w-[40%] rounded-2xl cursor-pointer"
           onClick={() => {
             window.open(
-              `https://wa.me/393270717765?text=Hola, estoy interesado en VIAJAR CON MI MASCOTA`,
+              `https://wa.me/393270717765?text=Hola, estoy interesad@ en VIAJAR CON MI MASCOTA`,
               "_blank"
             );
           }}
