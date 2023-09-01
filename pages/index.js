@@ -32,14 +32,14 @@ export default function Home() {
       {showGift ? <Gift /> : null}
 
       <div className="bg-white flex items-center  flex-col min-[450px]:block min-[450px]:bg-[url('../images/andrea-inicio.jpg')]  bg-opacity-50 h-auto min-[450px]:h-screen overflow-auto  bg-[length:100%_100%] ">
-        <div className=" h-auto w-[70%] text-center mt-7 ">
+        <div className=" h-auto w-[100%] tablet:w-[70%] text-center mt-7 ">
           <motion.div
             className="text-[20px] mb-10  min-[450px]:text-[30px] "
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ duration: 3 }}
           >
-            ¡Bienvenidos a mi Consultorio Virtual!
+            ¡Bienvenidos a Mi Consultorio Virtual!
           </motion.div>
           <div className="  visible mb-7 w-[80%] min-[450px]:hidden">
             <motion.div

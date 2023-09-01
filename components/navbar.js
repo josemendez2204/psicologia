@@ -30,7 +30,8 @@ const Navbar = () => {
   return (
     <div className="z-50 sticky top-0">
       <nav className="bg-white bg-opacity-80 flex justify-end mt-2 py-3.5">
-        <div className="text-4xl font-cursive mr-auto">Psic. Andrea Costantino</div>
+        <div className="text-4xl font-cursive mr-auto hidden tablet:block ">Psic. Andrea Costantino</div>
+        <div className="text-4xl font-cursive mr-auto block tablet:hidden mt-3">Psicoandrea</div>
         {menuItems.map((item) => (
           <Link
             key={item.href}

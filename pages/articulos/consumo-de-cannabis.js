@@ -36,7 +36,7 @@ function consumoDeCannabis() {
         <br />
         <h1 className="font-bold ">El Trastorno por consumo de Cannabis</h1>
         <br />
-        <ul className="list-disc text-justify ml-[30%]">
+        <ul className="list-disc text-justify ml-[15%] tablet:ml-[30%]">
           <li>Frecuencia en cantidades superiores</li>
           <li>Deseo persistente de abandonar</li>
           <li>Invierte tiempo para conseguir cannabis</li>
@@ -52,7 +52,7 @@ function consumoDeCannabis() {
         <br />
         <h1 className="font-bold">Intoxicación por Cannabis</h1>
         <br />
-        <ul className="list-disc text-justify ml-[30%]">
+        <ul className="list-disc text-justify ml-[15%] tablet:ml-[30%]">
           <li>Abuso reciente</li>
           <li>Comportamiento problemático</li>
           <li>

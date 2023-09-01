@@ -3,9 +3,8 @@ import { motion } from "framer-motion";
 import Image from "next/image";
 const servicio = () => {
   const individual = [
-    { id: 1, title: "PRIMERA SESION INDIVIDUAL", price: "$50" },
-    { id: 2, title: "SESION SUCESIVA INDIVIDUAL", price: "$30" },
-    { id: 3, title: "PACK SUCESIVO 4 SESIONES INDIVIDUALES", price: "$100" },
+    { id: 1, title: "SESION SUCESIVA INDIVIDUAL", price: "$50" },
+    { id: 2, title: "PACK SUCESIVO 4 SESIONES INDIVIDUALES", price: "$100" },
   ];
 
   const parejas = [
@@ -14,9 +13,9 @@ const servicio = () => {
   ];
 
   return (
-    <div className="bg-white bg-opacity-50 h-auto ">
-      <div className="flex justify-center flex-col items-center">
-        <div className="mt-2 text-4xl font-cursive  text-center  ">
+    <div className="bg-white bg-opacity-50 h-auto mx-[-30px] tablet:mx-[0px] ">
+      <div className="flex justify-center flex-col items-center text-center">
+        <div className="mt-2 text-4xl font-cursive    ">
           ¿En Qué y Cómo Puedo Ayudarte?
         </div>
         <p className=" mt-4 mb-3 w-[80%] text-justify">
@@ -28,7 +27,7 @@ const servicio = () => {
           tu esencia para modificar los pensamientos, emociones y
           comportamientos no deseados.{" "}
         </p>
-        <p className=" mb-3 w-[80%] text-justify">
+        <p className=" mb-3 w-[80%] text-justify ">
           En éste espacio inicias un proceso de sanación en tu historia de vida,
           crecimiento personal y amor propio, cierre de ciclos cuyo objetivo es
           desaprender y romper los viejos moldes, estilos de vida, eliminando el
@@ -49,17 +48,15 @@ const servicio = () => {
           le asigna el día y la hora en acuerdo entre el interesado y el
           profesional.
         </p>
-        <p className="mb-3 w-[80%] text-justify">
+        <p className="mb-3 w-[80%] text-justify ">
           Las consultas privadas son No-Reembolsables. Es decir que usted podrá
           reagendar su cita 1 sola vez, siempre y cuando notifique el cambio 24
           horas antes de su fecha y hora pautada.
         </p>
-        <p className="mb-3 w-[80%] text-justify">
+        <p className="mb-3 w-[80%]  ">
           Atención al cliente para reportar su pago y agendar su cita.
         </p>
-        <h1 className=" font-bold text-center ">
-          LAS ASESORIAS PERSONALIZADAS PUEDEN SER
-        </h1>
+        <h1 className=" font-bold ">LAS ASESORIAS PERSONALIZADAS PUEDEN SER</h1>
         <div className="mt-3 flex flex-row">
           <a href="#individual">
             <h2 className="font-semibold text-slate-700">INDIVIDUAL</h2>
@@ -73,10 +70,8 @@ const servicio = () => {
             <h2 className="font-semibold text-lime-800">FAMILIAR</h2>
           </a>
         </div>
-        <h1 className="font-cursive mt-3 mb-5 text-4xl text-center">
-          Nos vemos en Sesión
-        </h1>
       </div>
+      <h1 className="font-cursive mt-3 mb-5 text-4xl text-center ">Nos vemos en Sesión</h1>
       <div className="border-t-2 border-solid border-dividers "></div>
       <div className="flex justify-center flex-col items-center">
         <h1 className="mt-2 text-3xl bold text-center ">

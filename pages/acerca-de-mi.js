@@ -72,7 +72,7 @@ const about = () => {
         <div className="flex items-center flex-col justify-start">
           <h1 className="mb-2 text-[30px] text-center font-medium ">Andrea Angelica Costantino</h1>
           <Image
-            className="block w-[60%] h-[90%] float-left mb-3 min-[810px]:hidden"
+            className="block w-[100%] h-[90%] float-left mb-3 min-[810px]:hidden"
             src={require("../images/acerca-de-mi.jpg")}
           />
           {paragraphs.map((p, index) => (

@@ -14,7 +14,7 @@ export default function Header() {
         </title>
         <meta
           name="description"
-          content="Andrea Costantio es un psicólogo clínico con amplia experiencia en el tratamiento de trastornos mentales a través de terapias individuales, de pareja y familiares. Ofrece asesoramiento psicológico especializado en su centro de atención en Online"
+          content="Andrea Costantino es un psicólogo clínico con amplia experiencia en el tratamiento de trastornos mentales a través de terapias individuales, de pareja y familiares. Ofrece asesoramiento psicológico especializado en su centro de atención en Online"
         />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/mental-health.png" />

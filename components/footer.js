@@ -80,7 +80,7 @@ const footer = (props) => {
             title="twitter"
             onClick={() => {
               changeIcon(3);
-              window.open("https://twitter.com/hablapsicologa", "_blank");
+              window.open("https://twitter.com/psicacostantino", "_blank");
             }}
             onMouseEnter={() => changeIcon(3)}
             onMouseLeave={() => seticon(false)}
