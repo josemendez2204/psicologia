@@ -1,4 +1,4 @@
-import { useState} from "react";
+import { useState } from "react";
 const footer = (props) => {
   const [icon, seticon] = useState(false);
   const [iconSrc, seticonSrc] = useState(undefined);
@@ -26,10 +26,13 @@ const footer = (props) => {
         seticonNumber(icons);
         seticonSrc("/paypal.png");
         break;
+      case 7:
+        seticonNumber(icons);
+        seticonSrc("/telegram(1).png");
+        break;
     }
   };
 
-  
   const propModal = () => {
     props.handlerModalSetterBinance();
   };
@@ -89,6 +92,20 @@ const footer = (props) => {
         <div className="inline-block w-15 mt-2 cursor-pointer">
           <img
             className="w-full"
+            src={icon && iconNumber === 7 ? iconSrc : "/telegram.png"}
+            alt="telegram"
+            title="telegram"
+            onClick={() => {
+              changeIcon(7);
+              window.open("https://t.me/+Sv880uE-sMiSSxlL", "_blank");
+            }}
+            onMouseEnter={() => changeIcon(7)}
+            onMouseLeave={() => seticon(false)}
+          />
+        </div>
+        <div className="inline-block w-15 mt-2 cursor-pointer">
+          <img
+            className="w-full"
             src={icon && iconNumber === 4 ? iconSrc : "/tiktok.png"}
             alt="youtube"
             title="tiktok"
@@ -101,9 +118,11 @@ const footer = (props) => {
             }}
             onMouseEnter={() => changeIcon(4)}
             onMouseLeave={() => seticon(false)}
-          />
+          /> 
+
         </div>
       </div>
+      
       <div>
         <h3 className="font-bold underline mb-2 mt-5 ">Pagos</h3>
         <div>
@@ -143,6 +162,7 @@ const footer = (props) => {
         </div>
       </div>
     </footer>
+    
   );
 };
 

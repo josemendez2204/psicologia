@@ -41,7 +41,7 @@ export default function Home() {
           >
             ¡Bienvenidos a Mi Consultorio Virtual!
           </motion.div>
-          <div className="  visible mb-7 w-[80%] min-[450px]:hidden">
+          <div className="  visible mb-7 w-[80%] relative left-[5%] min-[450px]:hidden">
             <motion.div
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
@@ -54,7 +54,7 @@ export default function Home() {
             <div className="text-[15px] text-justify min-[450px]:text-center  min-[450px]:text-[20px]">
               <TypeAnimation
                 sequence={[
-                  "En éste espacio quiero compartir a todo aquel que busca una transformación en su estilo de vida. Desde la psicoeducación mi propósito es impartir mi experiencia dentro del campo de la salud mental como psicoterapeuta en el acompañamiento con las herramientas necesarias, calificadas,  probada y aprobadas para ayudarte  alcanzar el bienestar psicológico que todos frenéticamente buscamos.",
+                  "En este espacio mi finalidad es compartir con todo aquel que busca una transformación en su estilo y calidad de vida. Desde la psicoeducación mi propósito es impartir mi experiencia dentro del campo de la salud mental como psicoterapeuta en el acompañamiento terapéutico con las herramientas necesarias, calificadas, probadas y aprobadas que te ayudaran a establecer el bienestar psicológico que todos los individuo anhelamos alcanzar frenéticamente ",
                   1000,
                 ]}
                 speed={60}

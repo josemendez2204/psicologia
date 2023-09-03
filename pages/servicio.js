@@ -3,12 +3,12 @@ import { motion } from "framer-motion";
 import Image from "next/image";
 const servicio = () => {
   const individual = [
-    { id: 1, title: "SESION SUCESIVA INDIVIDUAL", price: "$50" },
+    { id: 1, title: "SESION INDIVIDUAL", price: "$50" },
     { id: 2, title: "PACK SUCESIVO 4 SESIONES INDIVIDUALES", price: "$100" },
   ];
 
   const parejas = [
-    { id: 4, title: `SESION EN PAREJA\n\n`, price: "$50" },
+    { id: 4, title: `SESION EN PAREJA\n\n`, price: "$55" },
     { id: 5, title: "PACK PAREJAS 4 SESIONES SUCESIVAS", price: "$155" },
   ];
 
@@ -75,7 +75,7 @@ const servicio = () => {
       <div className="border-t-2 border-solid border-dividers "></div>
       <div className="flex justify-center flex-col items-center">
         <h1 className="mt-2 text-3xl bold text-center ">
-          LAS ASESORIA PERSONALIZADA
+          LAS ASESORIAS PERSONALIZADA
         </h1>
         <h1 className="mt-2 text-4xl font-cursive">Individual</h1>
         <p>
@@ -152,7 +152,7 @@ const servicio = () => {
         >
           <PriceTable
             title={"SESION FAMILIAR \n \n "}
-            price="€55"
+            price="€65"
             onClick={() => {
               window.open(
                 `https://wa.me/393270717765?text=Hola, estoy interesad@ en SESION FAMILIAR`,
@@ -165,9 +165,9 @@ const servicio = () => {
       <div className="border-t-2 border-solid border-dividers "></div>
       <div className="flex justify-center flex-col items-center">
         <h1 className="mt-2 text-4xl text-center font-cursive">
-          Apoyo emocional de mascota
+          Informe de Soporte Emocional para Mascota
         </h1>
-        <p className="text-center mt-2">
+        <p className="text-justify mt-2">
           El Certificado de Apoyo Emocional para viajar con animales te permite
           llevar a tu mascota en cabina de avión.
         </p>

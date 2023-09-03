@@ -9,7 +9,7 @@ function lazoAfectivoEnFamilia() {
       <br/>
       <h1 className="font-bold">EL LAZO AFECTIVO EN LA FAMILIA</h1>
       <br />
-      <div className="text-justify">
+      <div className="text-center">
       <p>
         El motivo real de los conflictos en las familias es la falla en la
         construcción del lazo afectivo. El vínculo afectivo se construye a
@@ -144,7 +144,7 @@ function lazoAfectivoEnFamilia() {
       </p>
       <br />
       </div>
-      <p>Entonces, decide lo que deseas dejar como herencia...</p>
+      <p className="mb-2">Entonces, decide lo que deseas dejar como herencia...</p>
       </div>
       </div>
     </>
