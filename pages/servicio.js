@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 import Image from "next/image";
 const servicio = () => {
   const individual = [
-    { id: 1, title: "SESION INDIVIDUAL", price: "$50" },
+    { id: 1, title: "SESION INDIVIDUAL\n\n", price: "$50" },
     { id: 2, title: "PACK SUCESIVO 4 SESIONES INDIVIDUALES", price: "$100" },
   ];
 
@@ -152,7 +152,7 @@ const servicio = () => {
         >
           <PriceTable
             title={"SESION FAMILIAR \n \n "}
-            price="€65"
+            price="$65"
             onClick={() => {
               window.open(
                 `https://wa.me/393270717765?text=Hola, estoy interesad@ en SESION FAMILIAR`,
