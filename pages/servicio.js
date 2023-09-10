@@ -75,7 +75,7 @@ const servicio = () => {
       <div className="border-t-2 border-solid border-dividers "></div>
       <div className="flex justify-center flex-col items-center">
         <h1 className="mt-2 text-3xl bold text-center ">
-          LAS ASESORIAS PERSONALIZADA
+          LAS ASESORIAS PERSONALIZADAS
         </h1>
         <h1 className="mt-2 text-4xl font-cursive">Individual</h1>
         <p>
